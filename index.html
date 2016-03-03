@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>panelit!</title>
+<script src="jquery-1.9.0.min.js"></script>
+<script src="jcanvas.js"></script>
+<script src="script.js"></script>
+<script src="charmap.js"></script>
+
+<script>
+
+
+
+var lcd = new LCD(2,16);
+
+$( document ).ready(function() {
+	lcd.init();
+	lcd.write(" HELLO MR.ROBOT");
+	lcd.setCursor(0,1);
+	lcd.write("  TIME TO HACK");
+});
+
+
+</script>
+
+</head>
+<body>
+	<canvas width="800" height="800"></canvas>
+</body>
+</html>
